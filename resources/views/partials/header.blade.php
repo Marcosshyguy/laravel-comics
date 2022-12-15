@@ -8,12 +8,6 @@
                 @foreach ($dcComicsLink as $link)
                     <li>{{ $link }}</li>
                 @endforeach
-
-                {{-- <li v-for="(link, linkIndex) in this.itemListHeader" :key="linkIndex"
-                        :class="(link.linkState) ? 'underlined' : ''">
-                        <a @click="linkSelected (linkIndex)"
-                            :class="(link.linkState) ? 'colored' : ''">{{ link . linkName }}</a>
-                    </li> --}}
             </ul>
         </div>
     </div>

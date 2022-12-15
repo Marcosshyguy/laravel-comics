@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = config('comics');
+
     $dcComicsLink = ["Characters", "Comics", "Movies", "TV", "Games", "Collectibles", "Videos", "fans", "News", "Shop"];
 
     return view('home', compact('data', 'dcComicsLink'));
