@@ -10,7 +10,9 @@
 </head>
 
 <body>
-    @yield('title')
+
+    @include('partials.header')
+    @yield('content')
 </body>
 
 </html>
