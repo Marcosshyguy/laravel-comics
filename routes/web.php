@@ -20,3 +20,11 @@ Route::get('/', function () {
 
     return view('home', compact('data', 'dcComicsLink'));
 });
+
+Route::get('/secondPage', function () {
+    $data = config('comics');
+
+    $dcComicsLink = ["Characters", "Comics", "Movies", "TV", "Games", "Collectibles", "Videos", "fans", "News", "Shop"];
+
+    return view('secondPage', compact('data', 'dcComicsLink'));
+});

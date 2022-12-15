@@ -2,7 +2,7 @@
 
 
 @section('title')
-    <h1>comic</h1>
+    Comic
 @endsection
 
 
