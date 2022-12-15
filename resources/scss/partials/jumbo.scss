@@ -1,0 +1,43 @@
+.dynamic-jumbo{
+    height: 400px;
+    position: relative;
+    // saltare un passaggio per le immagini in background in css
+    background-image: url("../images/jumbotron.jpg");
+
+      div{
+        @include toUppercase();
+        padding: .4rem .8rem;
+        text-align: center;
+        background-color: $merch-bg;
+        position: absolute;
+        width: 14%;
+        bottom: -1em;
+        left: 4em
+      }
+  }
+
+  #comics-grid{
+    
+    .abc{
+      @include page-centering(60%);
+      position: relative;
+      button{
+        @include toUppercase();
+        position :absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin: 0 auto;
+        color: white;
+        border: none;
+        background-color: $merch-bg;
+        padding: .5rem;
+        cursor: pointer;
+  
+          &:hover{
+            background-color: lighten($merch-bg, 10%);
+          }
+        }
+
+    }
+  }

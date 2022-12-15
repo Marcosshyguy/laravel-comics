@@ -1,0 +1,9 @@
+@mixin page-centering ($width){
+    width: $width;
+    margin: 0 auto;
+}
+
+@mixin toUppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+}

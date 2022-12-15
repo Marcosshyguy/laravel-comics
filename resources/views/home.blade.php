@@ -7,29 +7,36 @@
 
 
 @section('content')
-    {{-- <div class="dynamic-jumbo">
-        <img :src="comics[currentSeries].thumb" :alt="comics[currentSeries].series">
-        <div>
-            <h4>Current series</h4>
+    <section>
+        <div class="dynamic-jumbo">
+            <div>
+                <h4>Current series</h4>
+            </div>
         </div>
-    </div> --}}
-    <section id="card-grid">
-        <div>
-            @foreach ($data as $comic)
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">
-                            {{ $comic['title'] }}
-                        </p>
+
+    </section>
+    <section id="comics-grid">
+
+        <div class="container my-5">
+            <div class="row  d-flex row-cols-6 g-2">
+                @foreach ($data as $comic)
+                    <div class="col">
+                        <div class="card w-100">
+                            <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    {{ $comic['title'] }}
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
 
         </div>
-        <div>
+        <div class="abc">
             <button>Load more</button>
         </div>
-
     </section>
 @endsection

@@ -1,16 +1,4 @@
-// variables
-$header-height : 100px;
-$merch-bg :#0282F9;
-// mixin
-@mixin page-centering ($width){
-    width: $width;
-    margin: 0 auto;
-}
 
-@mixin toUppercase {
-    text-transform: uppercase;
-    font-weight: bold;
-}
 header{
     height: $header-height;
     
